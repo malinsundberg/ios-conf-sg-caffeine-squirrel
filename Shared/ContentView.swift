@@ -11,6 +11,8 @@ struct ContentView: View {
     var body: some View {
         #if os(iOS)
         AppTabNavigation()
+        #elseif os(macOS)
+        Text("Hello iOS Conf SG! 👋")
         #endif
     }
 }

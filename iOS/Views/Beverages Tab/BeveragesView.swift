@@ -10,14 +10,17 @@ import SwiftUI
 struct BeveragesView: View {
     @StateObject private var beverageStore = BeverageStore()
     
-    private var todaysBeverages: String {
-        "\(beverageStore.dailyBeverages.last?.beverages.count ?? 0) cups"
+    private var todaysBeverageCount: String {
+        let beverageCount = beverageStore.dailyBeverages.last?.beverages.count ?? 0
+        let description = beverageCount == 1 ? "cup" : "cups"
+        
+        return "\(beverageCount) \(description)"
     }
     
     var body: some View {
         ScrollView {
             VStack(spacing: StylingHelpers.cardSpacing) {
-                DailyBeverageInfoView(title: "Today's Beverages", highlight: todaysBeverages)
+                DailyBeverageInfoView(title: "Today's Beverages", highlight: todaysBeverageCount)
                     .padding(.top)
                 
                 BeveragesGrid(beverageStore: beverageStore, beverages: Beverage.allCases)

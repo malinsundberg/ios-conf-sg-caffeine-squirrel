@@ -27,7 +27,6 @@ struct DailyBeverageInfoView: View {
                 Spacer()
             }
         }.padding()
-        .frame(maxWidth: .infinity)
         .cardBackground()
     }
 }

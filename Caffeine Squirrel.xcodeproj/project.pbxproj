@@ -42,10 +42,13 @@
 		F47069342793F8BF00D51DCC /* CardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069332793F8BF00D51DCC /* CardBackground.swift */; };
 		F47069362793FDCD00D51DCC /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069352793FDCD00D51DCC /* TitleModifier.swift */; };
 		F47069382793FFA400D51DCC /* HighlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069372793FFA400D51DCC /* HighlightView.swift */; };
-		F470693A2794000E00D51DCC /* SubtleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069392794000E00D51DCC /* SubtleModifier.swift */; };
-		F470693C279400A400D51DCC /* Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470693B279400A400D51DCC /* Highlight.swift */; };
+		F470693A2794000E00D51DCC /* DetailModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069392794000E00D51DCC /* DetailModifier.swift */; };
+		F470693C279400A400D51DCC /* HighlightModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470693B279400A400D51DCC /* HighlightModifier.swift */; };
 		F470693E279403D000D51DCC /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470693D279403D000D51DCC /* PrimaryButtonStyle.swift */; };
 		F47069402794064400D51DCC /* DailyBeverageInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470693F2794064400D51DCC /* DailyBeverageInfoView.swift */; };
+		F47069422794CD4B00D51DCC /* ChartBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069412794CD4B00D51DCC /* ChartBar.swift */; };
+		F47069442794CEE500D51DCC /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069432794CEE500D51DCC /* ChartView.swift */; };
+		F4CA10942794D19100C96E53 /* CaptionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10932794D19100C96E53 /* CaptionModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,10 +78,13 @@
 		F47069332793F8BF00D51DCC /* CardBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBackground.swift; sourceTree = "<group>"; };
 		F47069352793FDCD00D51DCC /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
 		F47069372793FFA400D51DCC /* HighlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightView.swift; sourceTree = "<group>"; };
-		F47069392794000E00D51DCC /* SubtleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtleModifier.swift; sourceTree = "<group>"; };
-		F470693B279400A400D51DCC /* Highlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highlight.swift; sourceTree = "<group>"; };
+		F47069392794000E00D51DCC /* DetailModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModifier.swift; sourceTree = "<group>"; };
+		F470693B279400A400D51DCC /* HighlightModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightModifier.swift; sourceTree = "<group>"; };
 		F470693D279403D000D51DCC /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		F470693F2794064400D51DCC /* DailyBeverageInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBeverageInfoView.swift; sourceTree = "<group>"; };
+		F47069412794CD4B00D51DCC /* ChartBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartBar.swift; sourceTree = "<group>"; };
+		F47069432794CEE500D51DCC /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		F4CA10932794D19100C96E53 /* CaptionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				F47069262793F59600D51DCC /* InsightsView.swift */,
+				F47069412794CD4B00D51DCC /* ChartBar.swift */,
+				F47069432794CEE500D51DCC /* ChartView.swift */,
 			);
 			path = "Insights Tab";
 			sourceTree = "<group>";
@@ -249,9 +257,10 @@
 				F47069332793F8BF00D51DCC /* CardBackground.swift */,
 				F47069352793FDCD00D51DCC /* TitleModifier.swift */,
 				F47069372793FFA400D51DCC /* HighlightView.swift */,
-				F47069392794000E00D51DCC /* SubtleModifier.swift */,
-				F470693B279400A400D51DCC /* Highlight.swift */,
+				F47069392794000E00D51DCC /* DetailModifier.swift */,
+				F470693B279400A400D51DCC /* HighlightModifier.swift */,
 				F470693D279403D000D51DCC /* PrimaryButtonStyle.swift */,
+				F4CA10932794D19100C96E53 /* CaptionModifier.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -379,20 +388,23 @@
 				F47069362793FDCD00D51DCC /* TitleModifier.swift in Sources */,
 				F47069342793F8BF00D51DCC /* CardBackground.swift in Sources */,
 				F47068E22793C37D00D51DCC /* ContentView.swift in Sources */,
+				F47069422794CD4B00D51DCC /* ChartBar.swift in Sources */,
 				F47069302793F6D800D51DCC /* BeveragesGrid.swift in Sources */,
 				F47068FF2793C4B300D51DCC /* DoubleDecimalFormatter.swift in Sources */,
 				F470692E2793F65400D51DCC /* InsightsView.swift in Sources */,
 				F470692C2793F64000D51DCC /* AppTabNavigation.swift in Sources */,
 				F47069022793C4B900D51DCC /* StylingHelpers.swift in Sources */,
 				F47068FC2793C4AC00D51DCC /* Colors.swift in Sources */,
-				F470693A2794000E00D51DCC /* SubtleModifier.swift in Sources */,
+				F4CA10942794D19100C96E53 /* CaptionModifier.swift in Sources */,
+				F470693A2794000E00D51DCC /* DetailModifier.swift in Sources */,
 				F47069122793C63E00D51DCC /* Tab.swift in Sources */,
 				F47068E02793C37D00D51DCC /* Caffeine_SquirrelApp.swift in Sources */,
-				F470693C279400A400D51DCC /* Highlight.swift in Sources */,
+				F470693C279400A400D51DCC /* HighlightModifier.swift in Sources */,
 				F470690F2793C61B00D51DCC /* BeverageStore.swift in Sources */,
 				F47069402794064400D51DCC /* DailyBeverageInfoView.swift in Sources */,
 				F470692D2793F64F00D51DCC /* BeveragesView.swift in Sources */,
 				F47069322793F76B00D51DCC /* BeverageColumn.swift in Sources */,
+				F47069442794CEE500D51DCC /* ChartView.swift in Sources */,
 				F47069192793CA1900D51DCC /* RoundedCornerRectangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

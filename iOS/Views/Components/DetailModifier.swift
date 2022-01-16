@@ -1,5 +1,5 @@
 //
-//  SubtleModifier.swift
+//  DetailModifier.swift
 //  Caffeine Squirrel (iOS)
 //
 //  Created by Malin Sundberg on 2022-01-15.
