@@ -44,6 +44,8 @@
 		F47069382793FFA400D51DCC /* HighlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069372793FFA400D51DCC /* HighlightView.swift */; };
 		F470693A2794000E00D51DCC /* SubtleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069392794000E00D51DCC /* SubtleModifier.swift */; };
 		F470693C279400A400D51DCC /* Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470693B279400A400D51DCC /* Highlight.swift */; };
+		F470693E279403D000D51DCC /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470693D279403D000D51DCC /* PrimaryButtonStyle.swift */; };
+		F47069402794064400D51DCC /* DailyBeverageInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470693F2794064400D51DCC /* DailyBeverageInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +77,8 @@
 		F47069372793FFA400D51DCC /* HighlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightView.swift; sourceTree = "<group>"; };
 		F47069392794000E00D51DCC /* SubtleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtleModifier.swift; sourceTree = "<group>"; };
 		F470693B279400A400D51DCC /* Highlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highlight.swift; sourceTree = "<group>"; };
+		F470693D279403D000D51DCC /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		F470693F2794064400D51DCC /* DailyBeverageInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBeverageInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,7 @@
 				F47069282793F5C000D51DCC /* BeveragesView.swift */,
 				F470692F2793F6D800D51DCC /* BeveragesGrid.swift */,
 				F47069312793F76B00D51DCC /* BeverageColumn.swift */,
+				F470693F2794064400D51DCC /* DailyBeverageInfoView.swift */,
 			);
 			path = "Beverages Tab";
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 				F47069372793FFA400D51DCC /* HighlightView.swift */,
 				F47069392794000E00D51DCC /* SubtleModifier.swift */,
 				F470693B279400A400D51DCC /* Highlight.swift */,
+				F470693D279403D000D51DCC /* PrimaryButtonStyle.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -367,6 +373,7 @@
 			files = (
 				F470690C2793C60200D51DCC /* DailyBeverages.swift in Sources */,
 				F47069382793FFA400D51DCC /* HighlightView.swift in Sources */,
+				F470693E279403D000D51DCC /* PrimaryButtonStyle.swift in Sources */,
 				F47069062793C51800D51DCC /* Beverage.swift in Sources */,
 				F47069162793C67B00D51DCC /* ChartValue.swift in Sources */,
 				F47069362793FDCD00D51DCC /* TitleModifier.swift in Sources */,
@@ -383,6 +390,7 @@
 				F47068E02793C37D00D51DCC /* Caffeine_SquirrelApp.swift in Sources */,
 				F470693C279400A400D51DCC /* Highlight.swift in Sources */,
 				F470690F2793C61B00D51DCC /* BeverageStore.swift in Sources */,
+				F47069402794064400D51DCC /* DailyBeverageInfoView.swift in Sources */,
 				F470692D2793F64F00D51DCC /* BeveragesView.swift in Sources */,
 				F47069322793F76B00D51DCC /* BeverageColumn.swift in Sources */,
 				F47069192793CA1900D51DCC /* RoundedCornerRectangle.swift in Sources */,
