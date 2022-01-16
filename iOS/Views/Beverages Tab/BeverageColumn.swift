@@ -25,7 +25,6 @@ struct BeverageColumn: View {
             
             Spacer()
         }.padding()
-        .frame(maxWidth: .infinity)
         .cardBackground()
     }
 }

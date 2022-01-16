@@ -7,13 +7,17 @@
 
 import Foundation
 
-struct ChartValue: Identifiable, Equatable {
+struct ChartValue: Identifiable, Equatable, Comparable {
     let id: UUID
     let value: Double
     
     init(id: UUID, value: Double) {
         self.id = id
         self.value = value
+    }
+    
+    static func < (lhs: ChartValue, rhs: ChartValue) -> Bool {
+        lhs.value < rhs.value
     }
 }
 

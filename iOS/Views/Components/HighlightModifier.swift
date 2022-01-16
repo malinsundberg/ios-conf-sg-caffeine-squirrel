@@ -1,5 +1,5 @@
 //
-//  Highlight.swift
+//  HighlightModifier.swift
 //  Caffeine Squirrel (iOS)
 //
 //  Created by Malin Sundberg on 2022-01-15.
