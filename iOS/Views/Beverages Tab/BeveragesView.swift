@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BeveragesView: View {
-    @StateObject private var beverageStore = BeverageStore()
+    @ObservedObject var beverageStore: BeverageStore
     
     private var todaysBeverageCount: String {
         let beverageCount = beverageStore.dailyBeverages.last?.beverages.count ?? 0
@@ -32,6 +32,6 @@ struct BeveragesView: View {
 
 struct BeveragesView_Previews: PreviewProvider {
     static var previews: some View {
-        BeveragesView()
+        BeveragesView(beverageStore: BeverageStore())
     }
 }
