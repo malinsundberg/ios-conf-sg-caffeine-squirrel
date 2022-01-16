@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F47068E02793C37D00D51DCC /* Caffeine_SquirrelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47068D02793C37B00D51DCC /* Caffeine_SquirrelApp.swift */; };
+		F47068E12793C37D00D51DCC /* Caffeine_SquirrelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47068D02793C37B00D51DCC /* Caffeine_SquirrelApp.swift */; };
+		F47068E22793C37D00D51DCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47068D12793C37B00D51DCC /* ContentView.swift */; };
+		F47068E32793C37D00D51DCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47068D12793C37B00D51DCC /* ContentView.swift */; };
+		F47068F52793C41500D51DCC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47068F42793C41500D51DCC /* Colors.xcassets */; };
+		F47068F72793C42400D51DCC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47068F62793C42400D51DCC /* Colors.xcassets */; };
+		F47068FC2793C4AC00D51DCC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47068FB2793C4AC00D51DCC /* Colors.swift */; };
+		F47068FD2793C4AC00D51DCC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47068FB2793C4AC00D51DCC /* Colors.swift */; };
+		F47068FF2793C4B300D51DCC /* DoubleDecimalFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47068FE2793C4B300D51DCC /* DoubleDecimalFormatter.swift */; };
+		F47069002793C4B300D51DCC /* DoubleDecimalFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47068FE2793C4B300D51DCC /* DoubleDecimalFormatter.swift */; };
+		F47069022793C4B900D51DCC /* StylingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069012793C4B900D51DCC /* StylingHelpers.swift */; };
+		F47069032793C4B900D51DCC /* StylingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069012793C4B900D51DCC /* StylingHelpers.swift */; };
+		F47069062793C51800D51DCC /* Beverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069052793C51800D51DCC /* Beverage.swift */; };
+		F47069072793C51800D51DCC /* Beverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069052793C51800D51DCC /* Beverage.swift */; };
+		F470690C2793C60200D51DCC /* DailyBeverages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470690B2793C60200D51DCC /* DailyBeverages.swift */; };
+		F470690D2793C60200D51DCC /* DailyBeverages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470690B2793C60200D51DCC /* DailyBeverages.swift */; };
+		F470690F2793C61B00D51DCC /* BeverageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470690E2793C61B00D51DCC /* BeverageStore.swift */; };
+		F47069102793C61B00D51DCC /* BeverageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470690E2793C61B00D51DCC /* BeverageStore.swift */; };
+		F47069122793C63E00D51DCC /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069112793C63E00D51DCC /* Tab.swift */; };
+		F47069132793C63E00D51DCC /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069112793C63E00D51DCC /* Tab.swift */; };
+		F47069162793C67B00D51DCC /* ChartValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069152793C67B00D51DCC /* ChartValue.swift */; };
+		F47069172793C67B00D51DCC /* ChartValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069152793C67B00D51DCC /* ChartValue.swift */; };
+		F47069192793CA1900D51DCC /* RoundedCornerRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069182793CA1900D51DCC /* RoundedCornerRectangle.swift */; };
+		F470691A2793CA1900D51DCC /* RoundedCornerRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069182793CA1900D51DCC /* RoundedCornerRectangle.swift */; };
+		F470691F2793CBB100D51DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F470691E2793CBB100D51DCC /* Assets.xcassets */; };
+		F47069202793CBB100D51DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F470691E2793CBB100D51DCC /* Assets.xcassets */; };
+		F47069232793CC7800D51DCC /* BeveragesView+DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069222793CC7800D51DCC /* BeveragesView+DisplayMode.swift */; };
+		F4CA10AC2795293C00C96E53 /* AddedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10A9279528BA00C96E53 /* AddedView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F47068D02793C37B00D51DCC /* Caffeine_SquirrelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caffeine_SquirrelApp.swift; sourceTree = "<group>"; };
+		F47068D12793C37B00D51DCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F47068D72793C37D00D51DCC /* Caffeine Squirrel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caffeine Squirrel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47068DD2793C37D00D51DCC /* Caffeine Squirrel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caffeine Squirrel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47068DF2793C37D00D51DCC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		F47068F42793C41500D51DCC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F47068F62793C42400D51DCC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F47068FB2793C4AC00D51DCC /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F47068FE2793C4B300D51DCC /* DoubleDecimalFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleDecimalFormatter.swift; sourceTree = "<group>"; };
+		F47069012793C4B900D51DCC /* StylingHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylingHelpers.swift; sourceTree = "<group>"; };
+		F47069052793C51800D51DCC /* Beverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beverage.swift; sourceTree = "<group>"; };
+		F470690B2793C60200D51DCC /* DailyBeverages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyBeverages.swift; sourceTree = "<group>"; };
+		F470690E2793C61B00D51DCC /* BeverageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeverageStore.swift; sourceTree = "<group>"; };
+		F47069112793C63E00D51DCC /* Tab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		F47069152793C67B00D51DCC /* ChartValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartValue.swift; sourceTree = "<group>"; };
+		F47069182793CA1900D51DCC /* RoundedCornerRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornerRectangle.swift; sourceTree = "<group>"; };
+		F470691E2793CBB100D51DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F47069222793CC7800D51DCC /* BeveragesView+DisplayMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BeveragesView+DisplayMode.swift"; sourceTree = "<group>"; };
+		F4CA10A9279528BA00C96E53 /* AddedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F47068D42793C37D00D51DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47068DA2793C37D00D51DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F47068CA2793C37A00D51DCC = {
+			isa = PBXGroup;
+			children = (
+				F47068EE2793C38800D51DCC /* iOS */,
+				F47068DE2793C37D00D51DCC /* macOS */,
+				F47068CF2793C37B00D51DCC /* Shared */,
+				F47068D82793C37D00D51DCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F47068CF2793C37B00D51DCC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F47069142793C65E00D51DCC /* Views */,
+				F47069042793C50F00D51DCC /* Models */,
+				F47068FA2793C49B00D51DCC /* Helpers */,
+				F47068D02793C37B00D51DCC /* Caffeine_SquirrelApp.swift */,
+				F47068D12793C37B00D51DCC /* ContentView.swift */,
+				F470691E2793CBB100D51DCC /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F47068D82793C37D00D51DCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F47068D72793C37D00D51DCC /* Caffeine Squirrel.app */,
+				F47068DD2793C37D00D51DCC /* Caffeine Squirrel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F47068DE2793C37D00D51DCC /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				F47069212793CC6E00D51DCC /* Helpers */,
+				F47068F82793C43700D51DCC /* Beverages Tab */,
+				F47068F92793C44000D51DCC /* Insights Tab */,
+				F47068DF2793C37D00D51DCC /* macOS.entitlements */,
+				F47068F62793C42400D51DCC /* Colors.xcassets */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		F47068EE2793C38800D51DCC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F47068F42793C41500D51DCC /* Colors.xcassets */,
+				F47068F32793C40200D51DCC /* Views */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		F47068EF2793C3C300D51DCC /* Beverages Tab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Beverages Tab";
+			sourceTree = "<group>";
+		};
+		F47068F02793C3D200D51DCC /* Insights Tab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Insights Tab";
+			sourceTree = "<group>";
+		};
+		F47068F32793C40200D51DCC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F470691D2793CA7500D51DCC /* Components */,
+				F47068EF2793C3C300D51DCC /* Beverages Tab */,
+				F47068F02793C3D200D51DCC /* Insights Tab */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F47068F82793C43700D51DCC /* Beverages Tab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Beverages Tab";
+			sourceTree = "<group>";
+		};
+		F47068F92793C44000D51DCC /* Insights Tab */ = {
+			isa = PBXGroup;
+			children = (
+				F4CA10A9279528BA00C96E53 /* AddedView.swift */,
+			);
+			path = "Insights Tab";
+			sourceTree = "<group>";
+		};
+		F47068FA2793C49B00D51DCC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F47068FB2793C4AC00D51DCC /* Colors.swift */,
+				F47069012793C4B900D51DCC /* StylingHelpers.swift */,
+				F47068FE2793C4B300D51DCC /* DoubleDecimalFormatter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F47069042793C50F00D51DCC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F47069052793C51800D51DCC /* Beverage.swift */,
+				F470690B2793C60200D51DCC /* DailyBeverages.swift */,
+				F470690E2793C61B00D51DCC /* BeverageStore.swift */,
+				F47069152793C67B00D51DCC /* ChartValue.swift */,
+				F47069112793C63E00D51DCC /* Tab.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F47069142793C65E00D51DCC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F47069242793D27500D51DCC /* Components */,
+				F470691B2793CA4A00D51DCC /* Beverages Tab */,
+				F470691C2793CA5200D51DCC /* Insights Tab */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F470691B2793CA4A00D51DCC /* Beverages Tab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Beverages Tab";
+			sourceTree = "<group>";
+		};
+		F470691C2793CA5200D51DCC /* Insights Tab */ = {
+			isa = PBXGroup;
+			children = (
+				F47069182793CA1900D51DCC /* RoundedCornerRectangle.swift */,
+			);
+			path = "Insights Tab";
+			sourceTree = "<group>";
+		};
+		F470691D2793CA7500D51DCC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F47069212793CC6E00D51DCC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F47069222793CC7800D51DCC /* BeveragesView+DisplayMode.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F47069242793D27500D51DCC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F47068D62793C37D00D51DCC /* Caffeine Squirrel (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F47068E82793C37D00D51DCC /* Build configuration list for PBXNativeTarget "Caffeine Squirrel (iOS)" */;
+			buildPhases = (
+				F47068D32793C37D00D51DCC /* Sources */,
+				F47068D42793C37D00D51DCC /* Frameworks */,
+				F47068D52793C37D00D51DCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Caffeine Squirrel (iOS)";
+			productName = "Caffeine Squirrel (iOS)";
+			productReference = F47068D72793C37D00D51DCC /* Caffeine Squirrel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F47068DC2793C37D00D51DCC /* Caffeine Squirrel (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F47068EB2793C37D00D51DCC /* Build configuration list for PBXNativeTarget "Caffeine Squirrel (macOS)" */;
+			buildPhases = (
+				F47068D92793C37D00D51DCC /* Sources */,
+				F47068DA2793C37D00D51DCC /* Frameworks */,
+				F47068DB2793C37D00D51DCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Caffeine Squirrel (macOS)";
+			productName = "Caffeine Squirrel (macOS)";
+			productReference = F47068DD2793C37D00D51DCC /* Caffeine Squirrel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F47068CB2793C37A00D51DCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F47068D62793C37D00D51DCC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					F47068DC2793C37D00D51DCC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F47068CE2793C37A00D51DCC /* Build configuration list for PBXProject "Caffeine Squirrel" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F47068CA2793C37A00D51DCC;
+			productRefGroup = F47068D82793C37D00D51DCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F47068D62793C37D00D51DCC /* Caffeine Squirrel (iOS) */,
+				F47068DC2793C37D00D51DCC /* Caffeine Squirrel (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F47068D52793C37D00D51DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47068F52793C41500D51DCC /* Colors.xcassets in Resources */,
+				F470691F2793CBB100D51DCC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47068DB2793C37D00D51DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47069202793CBB100D51DCC /* Assets.xcassets in Resources */,
+				F47068F72793C42400D51DCC /* Colors.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F47068D32793C37D00D51DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F470690C2793C60200D51DCC /* DailyBeverages.swift in Sources */,
+				F47069062793C51800D51DCC /* Beverage.swift in Sources */,
+				F47069162793C67B00D51DCC /* ChartValue.swift in Sources */,
+				F47068E22793C37D00D51DCC /* ContentView.swift in Sources */,
+				F47068FF2793C4B300D51DCC /* DoubleDecimalFormatter.swift in Sources */,
+				F47069022793C4B900D51DCC /* StylingHelpers.swift in Sources */,
+				F47068FC2793C4AC00D51DCC /* Colors.swift in Sources */,
+				F47069122793C63E00D51DCC /* Tab.swift in Sources */,
+				F47068E02793C37D00D51DCC /* Caffeine_SquirrelApp.swift in Sources */,
+				F470690F2793C61B00D51DCC /* BeverageStore.swift in Sources */,
+				F47069192793CA1900D51DCC /* RoundedCornerRectangle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47068D92793C37D00D51DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F470690D2793C60200D51DCC /* DailyBeverages.swift in Sources */,
+				F47069072793C51800D51DCC /* Beverage.swift in Sources */,
+				F47069172793C67B00D51DCC /* ChartValue.swift in Sources */,
+				F47069232793CC7800D51DCC /* BeveragesView+DisplayMode.swift in Sources */,
+				F47068E32793C37D00D51DCC /* ContentView.swift in Sources */,
+				F47069002793C4B300D51DCC /* DoubleDecimalFormatter.swift in Sources */,
+				F47069032793C4B900D51DCC /* StylingHelpers.swift in Sources */,
+				F47068FD2793C4AC00D51DCC /* Colors.swift in Sources */,
+				F4CA10AC2795293C00C96E53 /* AddedView.swift in Sources */,
+				F47069132793C63E00D51DCC /* Tab.swift in Sources */,
+				F47068E12793C37D00D51DCC /* Caffeine_SquirrelApp.swift in Sources */,
+				F47069102793C61B00D51DCC /* BeverageStore.swift in Sources */,
+				F470691A2793CA1900D51DCC /* RoundedCornerRectangle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F47068E62793C37D00D51DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F47068E72793C37D00D51DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F47068E92793C37D00D51DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.malinsundberg.Caffeine-Squirrel";
+				PRODUCT_NAME = "Caffeine Squirrel";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F47068EA2793C37D00D51DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.malinsundberg.Caffeine-Squirrel";
+				PRODUCT_NAME = "Caffeine Squirrel";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F47068EC2793C37D00D51DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.malinsundberg.Caffeine-Squirrel";
+				PRODUCT_NAME = "Caffeine Squirrel";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F47068ED2793C37D00D51DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.malinsundberg.Caffeine-Squirrel";
+				PRODUCT_NAME = "Caffeine Squirrel";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F47068CE2793C37A00D51DCC /* Build configuration list for PBXProject "Caffeine Squirrel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47068E62793C37D00D51DCC /* Debug */,
+				F47068E72793C37D00D51DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F47068E82793C37D00D51DCC /* Build configuration list for PBXNativeTarget "Caffeine Squirrel (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47068E92793C37D00D51DCC /* Debug */,
+				F47068EA2793C37D00D51DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F47068EB2793C37D00D51DCC /* Build configuration list for PBXNativeTarget "Caffeine Squirrel (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47068EC2793C37D00D51DCC /* Debug */,
+				F47068ED2793C37D00D51DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F47068CB2793C37A00D51DCC /* Project object */;
+}
