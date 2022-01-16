@@ -8,10 +8,18 @@
 import SwiftUI
 
 struct InsightsView: View {
+    @ObservedObject var beverageStore: BeverageStore
+    
+    private var beverageCountValues: [ChartValue] {
+        beverageStore.dailyBeverages.map { dailyBeverages in
+            ChartValue(id: dailyBeverages.id, value: Double(dailyBeverages.beverages.count))
+        }
+    }
+    
     var body: some View {
         ScrollView {
             VStack(spacing: 12) {
-                ChartView(values: ChartValue.examples, color: Color.chartColor1, yAxisName: "Beverages", xAxisName: "Days")
+                ChartView(values: beverageCountValues, color: Color.chartColor1, yAxisName: "Beverages", xAxisName: "Days")
             }.padding()
         }.background(Color.backgroundColor)
     }
@@ -19,6 +27,6 @@ struct InsightsView: View {
 
 struct InsightsView_Previews: PreviewProvider {
     static var previews: some View {
-        InsightsView()
+        InsightsView(beverageStore: BeverageStore())
     }
 }

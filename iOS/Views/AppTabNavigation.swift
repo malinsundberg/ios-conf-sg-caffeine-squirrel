@@ -10,17 +10,19 @@ import SwiftUI
 struct AppTabNavigation: View {
     @SceneStorage("selectedTab") private var selectedTab: Tab = .beverages
     
+    @StateObject private var beverageStore = BeverageStore()
+    
     var body: some View {
         TabView(selection: $selectedTab) {
             NavigationView {
-                BeveragesView()
+                BeveragesView(beverageStore: beverageStore)
                     .navigationBarTitle(Tab.beverages.title)
             }.tabItem {
                 Label(Tab.beverages.title, systemImage: Tab.beverages.sfSymbol)
             }.tag(Tab.beverages)
             
             NavigationView {
-                InsightsView()
+                InsightsView(beverageStore: beverageStore)
                     .navigationBarTitle(Tab.insights.title)
             }.tabItem {
                 Label(Tab.insights.title, systemImage: Tab.insights.sfSymbol)
