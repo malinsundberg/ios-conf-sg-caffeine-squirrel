@@ -13,26 +13,40 @@ struct InsightsView: View {
     @State private var selectedBeveragesValue: ChartValue?
     @State private var selectedCaffeineValue: ChartValue?
     
+    #if os(iOS)
+    let scrollToTop: Bool
+    #endif
+    
     var body: some View {
-        ScrollView {
-            #if os(iOS)
-            VStack(spacing: StylingHelpers.cardSpacing) {
-                ChartView(values: beverageCountValues, color: Color.chartColor1, yAxisName: "Beverages", xAxisName: "Days", description: "Total", highlight: beveragesHighlight, selectedValue: $selectedBeveragesValue)
+        ScrollViewReader { proxy in
+            ScrollView {
+                #if os(iOS)
+                VStack(spacing: StylingHelpers.cardSpacing) {
+                    ChartView(values: beverageCountValues, color: Color.chartColor1, yAxisName: "Beverages", xAxisName: "Days", description: "Total", highlight: beveragesHighlight, selectedValue: $selectedBeveragesValue)
+                        .padding(.top)
+                        .id(0)
+                    
+                    ChartView(values: caffeineCountValues, color: Color.chartColor2, yAxisName: "Caffeine", xAxisName: "Days", description: "Amount", highlight: caffeineHighlight,  selectedValue: $selectedCaffeineValue)
+                        .padding(.bottom)
+                }.padding(.horizontal)
+                .onChange(of: scrollToTop) { _ in
+                    withAnimation {
+                        proxy.scrollTo(0)
+                    }
+                }
                 
-                ChartView(values: caffeineCountValues, color: Color.chartColor2, yAxisName: "Caffeine", xAxisName: "Days", description: "Amount", highlight: caffeineHighlight,  selectedValue: $selectedCaffeineValue)
-            }.padding()
-            
-            #elseif os(macOS)
-            HStack(spacing: StylingHelpers.cardSpacing) {
-                ChartView(values: beverageCountValues, color: Color.chartColor1, yAxisName: "Beverages", xAxisName: "Days", description: "Total", highlight: beveragesHighlight, selectedValue: $selectedBeveragesValue)
-                    .frame(minWidth: 300, maxWidth: 360)
+                #elseif os(macOS)
+                HStack(spacing: StylingHelpers.cardSpacing) {
+                    ChartView(values: beverageCountValues, color: Color.chartColor1, yAxisName: "Beverages", xAxisName: "Days", description: "Total", highlight: beveragesHighlight, selectedValue: $selectedBeveragesValue)
+                        .frame(minWidth: 300, maxWidth: 360)
+                    
+                    ChartView(values: caffeineCountValues, color: Color.chartColor2, yAxisName: "Caffeine", xAxisName: "Days", description: "Amount", highlight: caffeineHighlight,  selectedValue: $selectedCaffeineValue)
+                        .frame(minWidth: 300, maxWidth: 360)
+                }.padding()
                 
-                ChartView(values: caffeineCountValues, color: Color.chartColor2, yAxisName: "Caffeine", xAxisName: "Days", description: "Amount", highlight: caffeineHighlight,  selectedValue: $selectedCaffeineValue)
-                    .frame(minWidth: 300, maxWidth: 360)
-            }.padding()
-            
-            #endif
-        }.background(Color.backgroundColor)
+                #endif
+            }.background(Color.backgroundColor)
+        }
     }
     
     private var beverageCountValues: [ChartValue] {
@@ -76,6 +90,10 @@ struct InsightsView: View {
 
 struct InsightsView_Previews: PreviewProvider {
     static var previews: some View {
+        #if os(iOS)
+        InsightsView(beverageStore: BeverageStore(), scrollToTop: false)
+        #elseif os(macOS)
         InsightsView(beverageStore: BeverageStore())
+        #endif
     }
 }

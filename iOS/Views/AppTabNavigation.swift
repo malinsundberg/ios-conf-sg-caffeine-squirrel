@@ -12,17 +12,35 @@ struct AppTabNavigation: View {
     
     @ObservedObject var beverageStore: BeverageStore
     
+    @State private var beverageTabScrollToTop: Bool = false
+    @State private var insightsTabScrollToTop: Bool = false
+    
     var body: some View {
-        TabView(selection: $selectedTab) {
+        let selectedTabBinding: Binding<Tab> = Binding<Tab> {
+            selectedTab
+        } set: {
+            if selectedTab == $0 {
+                switch selectedTab {
+                case .beverages:
+                    beverageTabScrollToTop.toggle()
+                case .insights:
+                    insightsTabScrollToTop.toggle()
+                }
+            } else {
+                selectedTab = $0
+            }
+        }
+        
+        TabView(selection: selectedTabBinding) {
             NavigationView {
-                BeveragesView(beverageStore: beverageStore)
+                BeveragesView(beverageStore: beverageStore, scrollToTop: beverageTabScrollToTop)
                     .navigationBarTitle(Tab.beverages.title)
             }.tabItem {
                 Label(Tab.beverages.title, systemImage: Tab.beverages.sfSymbol)
             }.tag(Tab.beverages)
             
             NavigationView {
-                InsightsView(beverageStore: beverageStore)
+                InsightsView(beverageStore: beverageStore, scrollToTop: insightsTabScrollToTop)
                     .navigationBarTitle(Tab.insights.title)
             }.tabItem {
                 Label(Tab.insights.title, systemImage: Tab.insights.sfSymbol)
