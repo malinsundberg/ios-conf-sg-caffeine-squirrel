@@ -64,6 +64,8 @@
 		F4CA10BB27952C5100C96E53 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069432794CEE500D51DCC /* ChartView.swift */; };
 		F4CA10BC27952C5B00C96E53 /* ChartBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069412794CD4B00D51DCC /* ChartBar.swift */; };
 		F4CA10BD27952C6600C96E53 /* CaptionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10932794D19100C96E53 /* CaptionModifier.swift */; };
+		F4CA10C42795371000C96E53 /* PlatformModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10C32795371000C96E53 /* PlatformModifiers.swift */; };
+		F4CA10C52795371000C96E53 /* PlatformModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10C32795371000C96E53 /* PlatformModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +106,7 @@
 		F4CA10A22795202F00C96E53 /* BeveragesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeveragesView.swift; sourceTree = "<group>"; };
 		F4CA10A5279520AD00C96E53 /* BeveragesGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeveragesGrid.swift; sourceTree = "<group>"; };
 		F4CA10A7279523F900C96E53 /* AddedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedView.swift; sourceTree = "<group>"; };
+		F4CA10C32795371000C96E53 /* PlatformModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +232,7 @@
 				F47068FB2793C4AC00D51DCC /* Colors.swift */,
 				F47069012793C4B900D51DCC /* StylingHelpers.swift */,
 				F47068FE2793C4B300D51DCC /* DoubleDecimalFormatter.swift */,
+				F4CA10C32795371000C96E53 /* PlatformModifiers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -405,6 +409,7 @@
 			files = (
 				F470690C2793C60200D51DCC /* DailyBeverages.swift in Sources */,
 				F47069382793FFA400D51DCC /* HighlightView.swift in Sources */,
+				F4CA10C42795371000C96E53 /* PlatformModifiers.swift in Sources */,
 				F470693E279403D000D51DCC /* PrimaryButtonStyle.swift in Sources */,
 				F47069062793C51800D51DCC /* Beverage.swift in Sources */,
 				F47069162793C67B00D51DCC /* ChartValue.swift in Sources */,
@@ -457,6 +462,7 @@
 				F47069132793C63E00D51DCC /* Tab.swift in Sources */,
 				F4CA10A127951F2200C96E53 /* PrimaryButtonStyle.swift in Sources */,
 				F4CA109D27951F0500C96E53 /* CardBackground.swift in Sources */,
+				F4CA10C52795371000C96E53 /* PlatformModifiers.swift in Sources */,
 				F47068E12793C37D00D51DCC /* Caffeine_SquirrelApp.swift in Sources */,
 				F47069102793C61B00D51DCC /* BeverageStore.swift in Sources */,
 				F4CA109C27951EFC00C96E53 /* HighlightView.swift in Sources */,
