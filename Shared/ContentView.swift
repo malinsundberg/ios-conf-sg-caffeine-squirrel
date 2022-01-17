@@ -12,7 +12,7 @@ struct ContentView: View {
         #if os(iOS)
         AppTabNavigation()
         #elseif os(macOS)
-        Text("Hello iOS Conf SG! 👋")
+        AppSidebarNavigation()
         #endif
     }
 }

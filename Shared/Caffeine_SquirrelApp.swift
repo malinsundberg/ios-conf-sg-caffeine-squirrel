@@ -12,6 +12,8 @@ struct Caffeine_SquirrelApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+        }.commands {
+            SidebarCommands()
         }
     }
 }
