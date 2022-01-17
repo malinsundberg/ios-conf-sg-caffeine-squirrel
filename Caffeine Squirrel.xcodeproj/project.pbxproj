@@ -50,6 +50,16 @@
 		F47069442794CEE500D51DCC /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069432794CEE500D51DCC /* ChartView.swift */; };
 		F4CA10942794D19100C96E53 /* CaptionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10932794D19100C96E53 /* CaptionModifier.swift */; };
 		F4CA10972795073900C96E53 /* AppSidebarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10952795070800C96E53 /* AppSidebarNavigation.swift */; };
+		F4CA109B27951EF800C96E53 /* BeverageColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069312793F76B00D51DCC /* BeverageColumn.swift */; };
+		F4CA109C27951EFC00C96E53 /* HighlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069372793FFA400D51DCC /* HighlightView.swift */; };
+		F4CA109D27951F0500C96E53 /* CardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069332793F8BF00D51DCC /* CardBackground.swift */; };
+		F4CA109E27951F0D00C96E53 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069352793FDCD00D51DCC /* TitleModifier.swift */; };
+		F4CA109F27951F1400C96E53 /* DetailModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069392794000E00D51DCC /* DetailModifier.swift */; };
+		F4CA10A027951F1B00C96E53 /* HighlightModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470693B279400A400D51DCC /* HighlightModifier.swift */; };
+		F4CA10A127951F2200C96E53 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470693D279403D000D51DCC /* PrimaryButtonStyle.swift */; };
+		F4CA10A42795203100C96E53 /* BeveragesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10A22795202F00C96E53 /* BeveragesView.swift */; };
+		F4CA10A6279520AD00C96E53 /* BeveragesGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10A5279520AD00C96E53 /* BeveragesGrid.swift */; };
+		F4CA10A8279523F900C96E53 /* AddedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10A7279523F900C96E53 /* AddedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +97,9 @@
 		F47069432794CEE500D51DCC /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		F4CA10932794D19100C96E53 /* CaptionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionModifier.swift; sourceTree = "<group>"; };
 		F4CA10952795070800C96E53 /* AppSidebarNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSidebarNavigation.swift; sourceTree = "<group>"; };
+		F4CA10A22795202F00C96E53 /* BeveragesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeveragesView.swift; sourceTree = "<group>"; };
+		F4CA10A5279520AD00C96E53 /* BeveragesGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeveragesGrid.swift; sourceTree = "<group>"; };
+		F4CA10A7279523F900C96E53 /* AddedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +209,8 @@
 		F47068F82793C43700D51DCC /* Beverages Tab */ = {
 			isa = PBXGroup;
 			children = (
+				F4CA10A22795202F00C96E53 /* BeveragesView.swift */,
+				F4CA10A5279520AD00C96E53 /* BeveragesGrid.swift */,
 			);
 			path = "Beverages Tab";
 			sourceTree = "<group>";
@@ -203,6 +218,7 @@
 		F47068F92793C44000D51DCC /* Insights Tab */ = {
 			isa = PBXGroup;
 			children = (
+				F4CA10A7279523F900C96E53 /* AddedView.swift */,
 			);
 			path = "Insights Tab";
 			sourceTree = "<group>";
@@ -416,18 +432,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4CA10A6279520AD00C96E53 /* BeveragesGrid.swift in Sources */,
 				F470690D2793C60200D51DCC /* DailyBeverages.swift in Sources */,
+				F4CA109F27951F1400C96E53 /* DetailModifier.swift in Sources */,
 				F47069072793C51800D51DCC /* Beverage.swift in Sources */,
 				F47069172793C67B00D51DCC /* ChartValue.swift in Sources */,
+				F4CA109E27951F0D00C96E53 /* TitleModifier.swift in Sources */,
 				F47069232793CC7800D51DCC /* BeveragesView+DisplayMode.swift in Sources */,
 				F47068E32793C37D00D51DCC /* ContentView.swift in Sources */,
+				F4CA10A42795203100C96E53 /* BeveragesView.swift in Sources */,
 				F47069002793C4B300D51DCC /* DoubleDecimalFormatter.swift in Sources */,
+				F4CA10A027951F1B00C96E53 /* HighlightModifier.swift in Sources */,
 				F47069032793C4B900D51DCC /* StylingHelpers.swift in Sources */,
 				F4CA10972795073900C96E53 /* AppSidebarNavigation.swift in Sources */,
 				F47068FD2793C4AC00D51DCC /* Colors.swift in Sources */,
+				F4CA10A8279523F900C96E53 /* AddedView.swift in Sources */,
 				F47069132793C63E00D51DCC /* Tab.swift in Sources */,
+				F4CA10A127951F2200C96E53 /* PrimaryButtonStyle.swift in Sources */,
+				F4CA109D27951F0500C96E53 /* CardBackground.swift in Sources */,
 				F47068E12793C37D00D51DCC /* Caffeine_SquirrelApp.swift in Sources */,
 				F47069102793C61B00D51DCC /* BeverageStore.swift in Sources */,
+				F4CA109C27951EFC00C96E53 /* HighlightView.swift in Sources */,
+				F4CA109B27951EF800C96E53 /* BeverageColumn.swift in Sources */,
 				F470691A2793CA1900D51DCC /* RoundedCornerRectangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

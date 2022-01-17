@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var beverageStore = BeverageStore()
+    
     var body: some View {
         #if os(iOS)
-        AppTabNavigation()
+        AppTabNavigation(beverageStore: beverageStore)
         #elseif os(macOS)
-        AppSidebarNavigation()
+        AppSidebarNavigation(beverageStore: beverageStore)
         #endif
     }
 }
