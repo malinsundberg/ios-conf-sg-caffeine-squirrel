@@ -66,6 +66,7 @@
 		F4CA10BD27952C6600C96E53 /* CaptionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10932794D19100C96E53 /* CaptionModifier.swift */; };
 		F4CA10C42795371000C96E53 /* PlatformModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10C32795371000C96E53 /* PlatformModifiers.swift */; };
 		F4CA10C52795371000C96E53 /* PlatformModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10C32795371000C96E53 /* PlatformModifiers.swift */; };
+		F4CA10CA27953A2D00C96E53 /* BeveragesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10C827953A2D00C96E53 /* BeveragesTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +108,7 @@
 		F4CA10A5279520AD00C96E53 /* BeveragesGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeveragesGrid.swift; sourceTree = "<group>"; };
 		F4CA10A7279523F900C96E53 /* AddedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedView.swift; sourceTree = "<group>"; };
 		F4CA10C32795371000C96E53 /* PlatformModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformModifiers.swift; sourceTree = "<group>"; };
+		F4CA10C827953A2D00C96E53 /* BeveragesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeveragesTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 			children = (
 				F4CA10A22795202F00C96E53 /* BeveragesView.swift */,
 				F4CA10A5279520AD00C96E53 /* BeveragesGrid.swift */,
+				F4CA10C827953A2D00C96E53 /* BeveragesTable.swift */,
 			);
 			path = "Beverages Tab";
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				F47069102793C61B00D51DCC /* BeverageStore.swift in Sources */,
 				F4CA109C27951EFC00C96E53 /* HighlightView.swift in Sources */,
 				F4CA109B27951EF800C96E53 /* BeverageColumn.swift in Sources */,
+				F4CA10CA27953A2D00C96E53 /* BeveragesTable.swift in Sources */,
 				F4CA10BB27952C5100C96E53 /* ChartView.swift in Sources */,
 				F470691A2793CA1900D51DCC /* RoundedCornerRectangle.swift in Sources */,
 			);
