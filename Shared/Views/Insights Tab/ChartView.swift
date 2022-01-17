@@ -32,19 +32,37 @@ struct ChartView: View {
                 HStack {
                     ForEach(values) { chartValue in
                         ChartBar(value: normalizedValue(for: chartValue.value), color: color, isSelected: selectedValue?.id == chartValue.id)
-                        .onTapGesture {
-                            withAnimation {
-                                if selectedValue?.id == chartValue.id {
-                                    selectedValue = nil
-                                } else {
-                                    selectedValue = chartValue
+                        .iOS {
+                            $0.onTapGesture {
+                                withAnimation {
+                                    if selectedValue?.id == chartValue.id {
+                                        selectedValue = nil
+                                    } else {
+                                        selectedValue = chartValue
+                                    }
+                                }
+                            }
+                        }.macOS {
+                            $0.onHover { isHovering in
+                                withAnimation {
+                                    if isHovering {
+                                        if selectedValue?.id != chartValue.id {
+                                            selectedValue = chartValue
+                                        }
+                                    } else {
+                                        selectedValue = nil
+                                    }
                                 }
                             }
                         }
                     }
                     
                     Divider()
-                }.frame(height: 240)
+                }.iOS {
+                    $0.frame(height: 240)
+                }.macOS {
+                    $0.frame(height: 200)
+                }
                 
                 Divider()
             }
