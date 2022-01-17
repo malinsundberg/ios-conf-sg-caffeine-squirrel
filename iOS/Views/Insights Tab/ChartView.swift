@@ -12,10 +12,17 @@ struct ChartView: View {
     let color: Color
     let yAxisName: String
     let xAxisName: String
+    let description: String
+    let highlight: String
+    
+    @Binding var selectedValue: ChartValue?
     
     var body: some View {
         VStack {
             HStack {
+                HighlightView(description: description, highlight: highlight)
+                    .animation(nil, value: selectedValue)
+                
                 Spacer()
                 Text(yAxisName)
                     .caption()
@@ -24,7 +31,16 @@ struct ChartView: View {
             VStack(spacing: 0) {
                 HStack {
                     ForEach(values) { chartValue in
-                        ChartBar(value: normalizedValue(for: chartValue.value), color: color)
+                        ChartBar(value: normalizedValue(for: chartValue.value), color: color, isSelected: selectedValue?.id == chartValue.id)
+                        .onTapGesture {
+                            withAnimation {
+                                if selectedValue?.id == chartValue.id {
+                                    selectedValue = nil
+                                } else {
+                                    selectedValue = chartValue
+                                }
+                            }
+                        }
                     }
                     
                     Divider()
@@ -36,7 +52,6 @@ struct ChartView: View {
             Text(xAxisName)
                 .caption()
         }.padding()
-        .background(Color.cardBackgroundColor)
         .cardBackground()
     }
     
@@ -49,7 +64,7 @@ struct ChartView: View {
 
 struct ChartView_Previews: PreviewProvider {
     static var previews: some View {
-        ChartView(values: ChartValue.examples, color: Color.chartColor1, yAxisName: "Beverages", xAxisName: "Days")
+        ChartView(values: ChartValue.examples, color: Color.chartColor1, yAxisName: "Beverages", xAxisName: "Days", description: "Amount", highlight: "12", selectedValue: .constant(nil))
             .padding()
     }
 }
