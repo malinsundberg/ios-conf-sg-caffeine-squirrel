@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct AppSidebarNavigation: View {
+    @ObservedObject var beverageStore: BeverageStore
+    
     @State private var selectedTab: Tab? = .beverages
+    @State private var isShowingBeverageAdded: Bool = false
     
     var body: some View {
         NavigationView {
             List {
                 NavigationLink(tag: Tab.beverages, selection: $selectedTab) {
-                    Text(Tab.beverages.title)
-                        .frame(minWidth: 400, minHeight: 300)
+                    BeveragesView(beverageStore: beverageStore, isShowingBeverageAdded: $isShowingBeverageAdded)
                 } label: {
                     Label(Tab.beverages.title, systemImage: Tab.beverages.sfSymbol)
                 }
@@ -24,7 +26,14 @@ struct AppSidebarNavigation: View {
                     Text(Tab.insights.title)
                         .frame(minWidth: 400, minHeight: 300)
                 } label: {
-                    Label(Tab.insights.title, systemImage: Tab.insights.sfSymbol)
+                    HStack {
+                        Label(Tab.insights.title, systemImage: Tab.insights.sfSymbol)
+                        
+                        Spacer()
+                        
+                        AddedView()
+                            .opacity(isShowingBeverageAdded ? 1 : 0)
+                    }
                 }
             }.listStyle(.sidebar)
             .toolbar {
@@ -42,6 +51,6 @@ struct AppSidebarNavigation: View {
 
 struct AppSidebarNavigation_Previews: PreviewProvider {
     static var previews: some View {
-        AppSidebarNavigation()
+        AppSidebarNavigation(beverageStore: BeverageStore())
     }
 }

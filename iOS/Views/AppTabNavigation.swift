@@ -10,7 +10,7 @@ import SwiftUI
 struct AppTabNavigation: View {
     @SceneStorage("selectedTab") private var selectedTab: Tab = .beverages
     
-    @StateObject private var beverageStore = BeverageStore()
+    @ObservedObject var beverageStore: BeverageStore
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -33,6 +33,6 @@ struct AppTabNavigation: View {
 
 struct AppTabNavigation_Previews: PreviewProvider {
     static var previews: some View {
-        AppTabNavigation()
+        AppTabNavigation(beverageStore: BeverageStore())
     }
 }
