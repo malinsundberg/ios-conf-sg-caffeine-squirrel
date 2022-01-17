@@ -67,6 +67,8 @@
 		F4CA10C42795371000C96E53 /* PlatformModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10C32795371000C96E53 /* PlatformModifiers.swift */; };
 		F4CA10C52795371000C96E53 /* PlatformModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10C32795371000C96E53 /* PlatformModifiers.swift */; };
 		F4CA10CA27953A2D00C96E53 /* BeveragesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10C827953A2D00C96E53 /* BeveragesTable.swift */; };
+		F4CA10CC279557E400C96E53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10CB279557E400C96E53 /* AppDelegate.swift */; };
+		F4CA10CE2795587300C96E53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CA10CD2795587300C96E53 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +111,8 @@
 		F4CA10A7279523F900C96E53 /* AddedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedView.swift; sourceTree = "<group>"; };
 		F4CA10C32795371000C96E53 /* PlatformModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformModifiers.swift; sourceTree = "<group>"; };
 		F4CA10C827953A2D00C96E53 /* BeveragesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeveragesTable.swift; sourceTree = "<group>"; };
+		F4CA10CB279557E400C96E53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4CA10CD2795587300C96E53 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +173,9 @@
 				F47068F92793C44000D51DCC /* Insights Tab */,
 				F47068DF2793C37D00D51DCC /* macOS.entitlements */,
 				F47068F62793C42400D51DCC /* Colors.xcassets */,
+				F4CA10CD2795587300C96E53 /* Images.xcassets */,
 				F4CA10952795070800C96E53 /* AppSidebarNavigation.swift */,
+				F4CA10CB279557E400C96E53 /* AppDelegate.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -398,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4CA10CE2795587300C96E53 /* Images.xcassets in Resources */,
 				F47069202793CBB100D51DCC /* Assets.xcassets in Resources */,
 				F47068F72793C42400D51DCC /* Colors.xcassets in Resources */,
 			);
@@ -462,6 +469,7 @@
 				F4CA10972795073900C96E53 /* AppSidebarNavigation.swift in Sources */,
 				F47068FD2793C4AC00D51DCC /* Colors.swift in Sources */,
 				F4CA10A8279523F900C96E53 /* AddedView.swift in Sources */,
+				F4CA10CC279557E400C96E53 /* AppDelegate.swift in Sources */,
 				F47069132793C63E00D51DCC /* Tab.swift in Sources */,
 				F4CA10A127951F2200C96E53 /* PrimaryButtonStyle.swift in Sources */,
 				F4CA109D27951F0500C96E53 /* CardBackground.swift in Sources */,

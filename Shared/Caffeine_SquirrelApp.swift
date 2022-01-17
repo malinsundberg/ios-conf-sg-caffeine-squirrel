@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct Caffeine_SquirrelApp: App {
+    #if os(macOS)
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    #endif
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -43,6 +43,10 @@ struct AppSidebarNavigation: View {
                         Image(systemName: "sidebar.leading")
                     }
                 }
+            }.onReceive(StatusBarHandler.consumptionPublisher) { beverage in
+                withAnimation(.spring()) {
+                    beverageStore.addConsumed(beverage: beverage)
+                }
             }
         }.background(Color.backgroundColor)
     }
