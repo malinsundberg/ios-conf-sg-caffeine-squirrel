@@ -31,10 +31,10 @@ struct ChartView: View {
             VStack(spacing: 0) {
                 HStack {
                     ForEach(values) { chartValue in
-                        ChartBar(value: normalizedValue(for: chartValue.value), color: color, isSelected: selectedValue == chartValue)
+                        ChartBar(value: normalizedValue(for: chartValue.value), color: color, isSelected: selectedValue?.id == chartValue.id)
                         .onTapGesture {
                             withAnimation {
-                                if selectedValue == chartValue {
+                                if selectedValue?.id == chartValue.id {
                                     selectedValue = nil
                                 } else {
                                     selectedValue = chartValue
