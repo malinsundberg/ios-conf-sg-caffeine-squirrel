@@ -8,12 +8,29 @@
 import SwiftUI
 
 struct BeveragesView: View {
+    @SceneStorage("displayMode") private var displayMode: BeveragesView.DisplayMode = .grid
+    
     @ObservedObject var beverageStore: BeverageStore
     
     @Binding var isShowingBeverageAdded: Bool
     
+    private let beverages: [Beverage] = Beverage.allCases
+    
     var body: some View {
-        BeveragesGrid(beverageStore: beverageStore, isShowingBeverageAdded: $isShowingBeverageAdded, beverages: Beverage.allCases)
+        VStack {
+            switch displayMode {
+            case .grid:
+                BeveragesGrid(beverageStore: beverageStore, isShowingBeverageAdded: $isShowingBeverageAdded, beverages: beverages)
+            case .table:
+                BeveragesTable(beverages: beverages)
+            }
+        }.toolbar {
+            Picker("Display Mode", selection: $displayMode) {
+                ForEach(BeveragesView.DisplayMode.allCases) { displayMode in
+                    Label(displayMode.title, systemImage: displayMode.sfSymbolName)
+                }
+            }.pickerStyle(.segmented)
+        }
     }
 }
 
