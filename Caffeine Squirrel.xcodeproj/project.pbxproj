@@ -49,6 +49,7 @@
 		F47069422794CD4B00D51DCC /* ChartBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069412794CD4B00D51DCC /* ChartBar.swift */; };
 		F47069442794CEE500D51DCC /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47069432794CEE500D51DCC /* ChartView.swift */; };
 		F4CA10942794D19100C96E53 /* CaptionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10932794D19100C96E53 /* CaptionModifier.swift */; };
+		F4CA10B727952A7E00C96E53 /* AddedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA10B627952A7E00C96E53 /* AddedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		F47069412794CD4B00D51DCC /* ChartBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartBar.swift; sourceTree = "<group>"; };
 		F47069432794CEE500D51DCC /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		F4CA10932794D19100C96E53 /* CaptionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionModifier.swift; sourceTree = "<group>"; };
+		F4CA10B627952A7E00C96E53 /* AddedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 		F47068F92793C44000D51DCC /* Insights Tab */ = {
 			isa = PBXGroup;
 			children = (
+				F4CA10B627952A7E00C96E53 /* AddedView.swift */,
 			);
 			path = "Insights Tab";
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				F47069002793C4B300D51DCC /* DoubleDecimalFormatter.swift in Sources */,
 				F47069032793C4B900D51DCC /* StylingHelpers.swift in Sources */,
 				F47068FD2793C4AC00D51DCC /* Colors.swift in Sources */,
+				F4CA10B727952A7E00C96E53 /* AddedView.swift in Sources */,
 				F47069132793C63E00D51DCC /* Tab.swift in Sources */,
 				F47068E12793C37D00D51DCC /* Caffeine_SquirrelApp.swift in Sources */,
 				F47069102793C61B00D51DCC /* BeverageStore.swift in Sources */,
