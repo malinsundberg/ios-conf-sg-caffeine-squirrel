@@ -15,11 +15,23 @@ struct InsightsView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 12) {
+            #if os(iOS)
+            VStack(spacing: StylingHelpers.cardSpacing) {
                 ChartView(values: beverageCountValues, color: Color.chartColor1, yAxisName: "Beverages", xAxisName: "Days", description: "Total", highlight: beveragesHighlight, selectedValue: $selectedBeveragesValue)
                 
                 ChartView(values: caffeineCountValues, color: Color.chartColor2, yAxisName: "Caffeine", xAxisName: "Days", description: "Amount", highlight: caffeineHighlight,  selectedValue: $selectedCaffeineValue)
             }.padding()
+            
+            #elseif os(macOS)
+            HStack(spacing: StylingHelpers.cardSpacing) {
+                ChartView(values: beverageCountValues, color: Color.chartColor1, yAxisName: "Beverages", xAxisName: "Days", description: "Total", highlight: beveragesHighlight, selectedValue: $selectedBeveragesValue)
+                    .frame(minWidth: 300, maxWidth: 360)
+                
+                ChartView(values: caffeineCountValues, color: Color.chartColor2, yAxisName: "Caffeine", xAxisName: "Days", description: "Amount", highlight: caffeineHighlight,  selectedValue: $selectedCaffeineValue)
+                    .frame(minWidth: 300, maxWidth: 360)
+            }.padding()
+            
+            #endif
         }.background(Color.backgroundColor)
     }
     

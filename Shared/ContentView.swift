@@ -15,6 +15,7 @@ struct ContentView: View {
         AppTabNavigation(beverageStore: beverageStore)
         #elseif os(macOS)
         AppSidebarNavigation(beverageStore: beverageStore)
+            .frame(minHeight: 350)
         #endif
     }
 }

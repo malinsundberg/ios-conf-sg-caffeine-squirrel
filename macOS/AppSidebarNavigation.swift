@@ -23,8 +23,7 @@ struct AppSidebarNavigation: View {
                 }
 
                 NavigationLink(tag: Tab.insights, selection: $selectedTab) {
-                    Text(Tab.insights.title)
-                        .frame(minWidth: 400, minHeight: 300)
+                    InsightsView(beverageStore: beverageStore)
                 } label: {
                     HStack {
                         Label(Tab.insights.title, systemImage: Tab.insights.sfSymbol)
