@@ -52,7 +52,6 @@ struct ChartView: View {
             Text(xAxisName)
                 .caption()
         }.padding()
-        .background(Color.cardBackgroundColor)
         .cardBackground()
     }
     
